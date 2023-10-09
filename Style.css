@@ -2,15 +2,63 @@ body{
     font-family:  sans-serif;
     
 }
+.box-menu {
+    background-color: #722F37;
+    max-width: 100%;
+    z-index: 999;
+}
+.box-menu img{
+    width: 20%;
+    padding: 10px;
+}
+
 h1{
     text-align: center;
 }
-.background-image img{
-    text-align: center;
+.background-image img {
+    display: block;
+    margin: auto;
+    max-width: 100%; 
+    width: 100%; 
+    height: auto; 
+    margin: 15px auto; 
+}
+
+.box-image img {
     
 }
-.box-image img{
-    width: 20%;
-    height: 20%;
-    
+
+/* pie de pagina */
+footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+}
+
+
+.contact-column {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+.contact-column h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-column p {
+    font-size: 16px;
+}
+
+.contact-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
 }
