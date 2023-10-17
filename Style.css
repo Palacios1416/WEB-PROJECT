@@ -89,6 +89,13 @@ li a:hover{
 
 /*Estilos para el body*/
 
+.background-movement{
+    /*El fondo debe ser una imagen, no una imagen insertada en html
+    ya que hay que colocar 2 botones, uno para una frase distinta
+    cuando se corra la imagen y otra para menu */
+    background-image: url("img/background-coffee.png");
+}
+
 img{
     width: 100%;
 }
