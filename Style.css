@@ -3,79 +3,50 @@ header {
     background-color: #663b26;
     color: #fff;
     padding: 25px;
-    font-size: 10px;
-
+    font-family: sans-serif;
 }
 
-.button {
-    background-color: #ffffff;
-    color: #fff;
+.search-button {
+    background-color: #ffffff00;
     padding: 10px 20px;
+    margin: 10px;
     border: none;
-
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+}
+.logo-y-frase {
+    display: flex; 
+    align-items: center; 
 }
 
-/* Estilo cuando el cursor pasa sobre el botón */
-.button:hover {
-    background-color: #2980b9;
-}
+
 
 nav {
     display: flex;
-    justify-content: right; /* Alinea los elementos hacia los extremos (izquierda y derecha) */
-    align-items: center; /* Centra verticalmente los elementos en la fila */
+    justify-content: space-between; 
+    align-items: center;
+    list-style: none; 
 }
-
+nav a img{
+    width: 60px;
+    height: 60px;
+    padding-right: 30px;
+}
 ul {
     list-style: none;
     display: flex;
+    
 }
 
 ul li {
+    
     margin-right: 20px;
+    font-size: 10px;
+    
 }
 ul li a{
     text-decoration: none;
 }
-
-/* Estilos para la caja de búsqueda */
-.search-input {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #fff;
-}
-
-/* Estilos para el botón de búsqueda */
-.search-button {
-    background-color: #a15632;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 nav{
     height: 80px;
@@ -89,14 +60,16 @@ nav ul li{
     display: inline-block;
     line-height: 80px;
     margin: 0 5px;
+    
 }
 nav ul li a{
     color: #fff;
-    font-size: 18px;
-    padding: 7px 13px;
+    font-size: 14px;
+    padding-left: 25px;
     border-radius: 48px;
-    text-transform: uppercase;
+    text-decoration: none;
 }
+
 li a:hover{
     background: #BC642D;
     transition: .5s;
@@ -111,81 +84,89 @@ li a:hover{
     display: none;
 }
 
-.search-box input{
+/* Estilos para la caja de búsqueda */
+.search-input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #fff;
+}
+
+/* Estilos para el botón de búsqueda */
+.search-button img{    
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
-.menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+/* Estilos del footer */
+/* Estilos generales para el footer */
+footer {
+    background-color: #f7f7f7; 
+    padding: 20px;
+    font-family: 'Sans SemiCondensed', sans-serif; 
+}
+
+.footer-columns {
     display: flex;
+    justify-content: space-between;
 }
 
-.menu li {
-    margin-right: 20px;
+.footer-column {
+    width: calc(33.33%);
+    padding: 20px;
+    background-color: #fff; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
 }
 
-.menu a {
-    text-decoration: none;
-    color: #fff;
-    position: relative;
+h4 {
+    color: #333; 
 }
 
-.menu i {
-    margin-right: 20px;
+ul {
+    list-style: none;
+    padding: 0;
+    display: block; 
+    margin: 0px 20px 2px 2px; 
 }
+
+li {
+    color: #555; 
+    margin-top: 5px;
+    
+}
+
+.last-foot {
+    text-align: center;
+    font-size: 12px;
+    padding: 12px;
+    background-color: #202020;
+    color: #fff; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Estilos del icono de menú en dispositivos móviles */
 
-/* Pie de pagina */
-.contact-columns {
-    display: flex;
-    flex-wrap: wrap; /* Permite que las columnas se envuelvan en una fila en pantallas pequeñas */
-}
-
-.contact-column {
-    width: calc(33.33% - 20px); /* Tamaño de cada columna con un margen entre ellas */
-    margin-right: 20px; /* Espacio entre las columnas */
-    padding-left: 10px; /* Espacio en el lado izquierdo (barra) */
-    border-left: 3px solid #333; /* Barra en el lado izquierdo */
-    margin-bottom: 20px; /* Espacio entre las columnas */
-}
-
-/* Estilos para las últimas columnas en pantallas pequeñas */
-.contact-column .contact-column:last-child {
-    margin-right: 0; /* Elimina el margen derecho de la última columna */
-}
-
-/* Estilos para el pie de página */
-.last-foot {
-    text-align: center;
-}
-
-
-
 /* Estilos responsivos */
 @media (max-width: 720px) and (max-height: 1280px) { 
-    .menu {
-        display: none;
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    .menu.active {
-        display: flex;
-    }
-
-    .menu li {
-        margin: 10px 0;
-    }
-
-    .menu-icon {
-        display: flex;
-    }
-
-    .search-icon, .search-box {
-        display: inline-block;
-    }
     
 }
