@@ -1,4 +1,4 @@
-/* Estilos generales del menú */
+/* Estilos del menu */
 header {
     background-color: #663b26;
     color: #fff;
@@ -18,7 +18,10 @@ header {
     display: flex; 
     align-items: center; 
 }
-
+nav a{
+    text-decoration: none;
+    color: white;
+}
 
 
 nav {
@@ -59,14 +62,14 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 5px;
     
 }
 nav ul li a{
     color: #fff;
     font-size: 14px;
     padding-left: 25px;
-    border-radius: 48px;
+    border-radius: 20% 1px;
     text-decoration: none;
 }
 
@@ -84,14 +87,8 @@ li a:hover{
     display: none;
 }
 
-/* Estilos para la caja de búsqueda */
-.search-input {
-    width: 200px;
-    padding: 5px;
-    border: 1px solid #fff;
-}
 
-/* Estilos para el botón de búsqueda */
+/* Estilos para el boton de busqueda */
 .search-button img{    
     width: 40px;
     height: 40px;
@@ -99,7 +96,7 @@ li a:hover{
 }
 
 /* Estilos del footer */
-/* Estilos generales para el footer */
+
 footer {
     background-color: #f7f7f7; 
     padding: 20px;
@@ -115,8 +112,38 @@ footer {
     width: calc(33.33%);
     padding: 20px;
     background-color: #fff; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+    
 }
+
+.footer-column ul li{
+    font-size: 12px;
+}
+
+.lista-horario{
+    margin-left: 20px;
+}
+.logo-email img{
+    width: 20px;
+    margin-right: 10px;
+
+}
+.logo-phone img{
+    width: 20px;
+    margin-right: 10px;
+}
+.logo-direction img{
+    width: 20px;
+    margin-right: 10px;
+}
+.logo-faceb img{
+    width: 20px;
+    margin-right: 10px;
+}
+.logo-insta img{
+    width: 20px;
+    margin-right: 10px;
+}
+
 
 h4 {
     color: #333; 
